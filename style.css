@@ -1,0 +1,167 @@
+
+/* Set global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the logo */
+.logo-class {
+    color: #fff;
+    padding: 10px;
+}
+
+.logo-class p {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo-class span {
+    color: #ff0000;
+}
+
+/* Style the wrapper class */
+.wrapper-class {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the elements to the next line */
+}
+
+/* Style the main section */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Style the sidebar */
+.sidebar {
+    width: 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Style the search container */
+.search-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style the search input */
+.movie-search {
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Hide the search list by default */
+.hide-search-list {
+    display: none;
+}
+
+/* Style the search list */
+.search-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.search-item-thumb img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.search-item-info {
+    flex: 1;
+}
+
+.search-item-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.search-item-info p {
+    margin: 0;
+    color: #888;
+}
+
+.search-item-info button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the result container */
+.result-container {
+    margin-bottom: 20px;
+}
+
+/* Style the result grid */
+.result-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-info {
+    font-size: 16px;
+}
+
+.movie-info .movie-title {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.favorite-movies {
+    margin-bottom: 20px;
+    order: 1; /* Change the order to display at the bottom */
+}
+
+.favorite-movie-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.favorite-movie-item .favorite-movie-title {
+    flex: 1;
+}
+
+.favorite-movie-item button {
+    padding: 5px;
+    background-color: transparent;
+    color: #ff0000;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.favorite-movie-item button:hover {
+    color: #c70000;
+}
+
+/* Add media query for mobile view */
+@media (max-width: 768px) {
+    .wrapper-class {
+        flex-direction: column-reverse; /* Reverse the order for mobile view */
+    }
+
+    .sidebar {
+        margin: auto;
+        width: 80%;
+    }
+}
